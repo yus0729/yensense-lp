@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YenSense株式会社 — 選び取る力が、縁を結び、円を描く。</title>
+<meta name="description" content="YenSense株式会社は、東京・世田谷を拠点にスマートフォンアプリを企画・開発・運営するソフトウェア会社です。AI英会話アプリ「Spinglish」、読書メモアプリ「Ocren」を提供しています。">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://yensense.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YenSense株式会社">
+<meta property="og:url" content="https://yensense.com/">
+<meta property="og:title" content="YenSense株式会社 — 選び取る力が、縁を結び、円を描く。">
+<meta property="og:description" content="東京・世田谷のソフトウェア会社。AI英会話アプリ「Spinglish」、読書メモアプリ「Ocren」を開発・運営しています。">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1913'/%3E%3Ctext x='32' y='44' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='34' fill='%23ffffff' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+<noscript><style>.line>span,.fade,[data-reveal],.hero__giant span{opacity:1!important;transform:none!important}</style></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YenSense株式会社",
+  "url": "https://yensense.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "東京都",
+    "addressLocality": "世田谷区",
+    "addressCountry": "JP"
+  },
+  "founder": { "@type": "Person", "name": "鈴木 優" }
+}
+</script>
+
+<style>
+/* ================= tokens ================= */
+:root{
+  --paper:#ffffff;
+  --ink:#1a1913;
+  --ink-soft:rgba(26,25,19,.72);
+  --ink-mute:#6b675a;
+  --line:#e4e2dd;
+  --max:1200px;
+  --font-en:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --font-min:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --font-sans:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-sans);
+  font-size:14px;
+  line-height:2.2;
+  letter-spacing:.05em;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{margin:0;font-weight:400}
+p{margin:0}
+section{scroll-margin-top:96px}
+.wrap{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:clamp(20px,4vw,48px)}
+
+/* ================= header ================= */
+.hdr{position:absolute;top:0;left:0;right:0;z-index:10}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{
+  font-family:var(--font-en);font-weight:500;font-size:15px;letter-spacing:-.01em;
+  text-decoration:none;
+}
+.nav{display:flex;gap:clamp(20px,3vw,40px)}
+.nav a{
+  font-family:var(--font-en);font-size:10px;font-weight:500;
+  letter-spacing:.2em;text-transform:uppercase;
+  text-decoration:none;color:var(--ink);
+  transition:opacity .5s var(--ease);
+}
+.nav a:hover{opacity:.45}
+@media(max-width:420px){
+  .nav{gap:14px}
+  .nav a{letter-spacing:.14em}
+}
+
+/* ================= hero ================= */
+.hero{
+  position:relative;
+  min-height:100vh;
+  min-height:100svh;
+  display:flex;flex-direction:column;
+  padding-top:140px;
+  overflow:hidden;
+}
+.hero__in{flex:1;display:flex;flex-direction:column;justify-content:center}
+.hero__eyebrow{
+  font-family:var(--font-en);font-size:10px;font-weight:500;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--ink-mute);
+  margin-bottom:40px;
+}
+.hero__copy{
+  font-family:var(--font-min);font-weight:400;
+  font-size:clamp(26px,3.6vw,46px);
+  line-height:2.0;letter-spacing:.14em;
+  font-feature-settings:"palt";
+}
+.hero__sub{
+  margin-top:38px;
+  font-family:var(--font-en);font-weight:500;font-size:10px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);
+}
+.hero__giant{position:relative;z-index:1;margin-top:auto;padding-top:6vh}
+.hero__giant span{
+  display:block;
+  font-family:var(--font-en);font-weight:500;
+  font-size:clamp(52px,17vw,320px);
+  line-height:.82;letter-spacing:-.015em;white-space:nowrap;
+  transform:translateY(112%);
+  margin-bottom:-.06em;
+}
+.is-ready .hero__giant span{animation:riseIn 1.8s var(--ease) .7s forwards}
+.hero__giant::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--paper)}
+
+.hero__scroll{
+  position:absolute;bottom:32vh;right:clamp(24px,3.6vw,48px);z-index:2;
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+}
+.hero__scroll b{
+  font-family:var(--font-en);font-weight:500;font-size:9px;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--ink-mute);
+  writing-mode:vertical-rl;
+}
+.hero__scroll i{width:1px;height:64px;background:var(--ink-mute);opacity:.5}
+@media(max-width:900px){ .hero__scroll{display:none} }
+
+/* イントロ（行マスク） */
+.line{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.08em}
+.line > span{display:block;transform:translateY(114%)}
+.is-ready .line > span{
+  animation:riseIn 1.8s var(--ease) forwards;
+  animation-delay:calc(var(--i,0) * 150ms + 120ms);
+}
+@keyframes riseIn{to{transform:translateY(0)}}
+.fade{opacity:0;transform:translateY(12px)}
+.is-ready .fade{
+  animation:fadeUp 1.4s var(--ease) forwards;
+  animation-delay:calc(var(--i,0) * 150ms + 650ms);
+}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+
+/* ================= sections ================= */
+.sec .wrap{padding-block:clamp(120px,16vw,220px)}
+.sec--ruled .wrap{border-top:1px solid var(--line)}
+
+.sec__grid{display:grid;gap:clamp(48px,7vw,72px)}
+@media(min-width:900px){
+  .sec__grid{grid-template-columns:220px minmax(0,1fr);gap:clamp(40px,6vw,96px)}
+  .sec__label{position:sticky;top:120px;align-self:start}
+}
+.sec__label{
+  font-family:var(--font-en);font-weight:400;font-size:10px;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--ink-mute);
+  font-variant-numeric:tabular-nums;
+}
+.sec__title{
+  font-family:var(--font-min);font-weight:400;
+  font-size:clamp(22px,2.8vw,34px);line-height:1.9;letter-spacing:.12em;
+  font-feature-settings:"palt";
+}
+.sec__en{
+  margin-top:18px;
+  font-family:var(--font-en);font-weight:400;font-size:10px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);
+}
+.sec__body{margin-top:clamp(40px,6vw,72px)}
+
+/* reveal */
+[data-reveal]{opacity:0;transform:translateY(16px);transition:opacity 1.4s var(--ease),transform 1.4s var(--ease)}
+[data-reveal].in{opacity:1;transform:none;transition-delay:calc(var(--i,0)*150ms)}
+
+/* ================= philosophy ================= */
+.phi__body{max-width:36em;display:grid;gap:2.2em;color:var(--ink-soft)}
+
+/* ================= origin ================= */
+.origin__body{max-width:36em}
+.origin__body p{
+  font-family:var(--font-min);font-weight:400;
+  font-size:15px;line-height:2.6;letter-spacing:.06em;
+  color:var(--ink);margin:0 0 2.2em;
+}
+.origin__body p:last-child{margin-bottom:0}
+.origin__sub{margin-top:clamp(56px,8vw,96px)}
+.origin__body p.origin__sub-en{
+  font-family:var(--font-en);font-weight:400;font-size:10px;
+  line-height:2;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);
+  margin:18px 0 clamp(40px,6vw,72px);
+}
+
+/* ================= company ================= */
+.company{margin:0;border-top:1px solid var(--line);max-width:680px}
+.row{
+  display:grid;grid-template-columns:160px 1fr;gap:20px;
+  padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline;
+}
+@media(max-width:640px){ .row{grid-template-columns:1fr;gap:2px;padding:17px 0} }
+.row dt{
+  margin:0;font-size:12px;letter-spacing:.1em;color:var(--ink-mute);
+  display:flex;align-items:baseline;gap:12px;
+}
+.row dt small{font-family:var(--font-en);font-weight:400;font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+.row dd{margin:0;font-size:13px;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.row dd ul{margin:0;padding-left:1.2em}
+.row dd li{margin:3px 0}
+
+/* ================= footer ================= */
+.ftr .wrap{
+  border-top:1px solid var(--line);
+  padding-block:clamp(56px,8vw,96px) 48px;
+  display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center;
+  font-size:12px;color:var(--ink-mute);letter-spacing:.05em;
+}
+.ftr a{color:var(--ink-mute);text-decoration:none;transition:color .4s}
+.ftr a:hover{color:var(--ink)}
+.ftr__links{display:flex;gap:24px;flex-wrap:wrap}
+.ftr__links .en{font-family:var(--font-en);font-weight:500;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+
+/* ================= a11y ================= */
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:12px 20px;z-index:200}
+.skip:focus{left:0}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .line > span,.fade,[data-reveal],.hero__giant span{opacity:1!important;transform:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top">YenSense</a>
+    <nav class="nav" aria-label="メインナビゲーション">
+      <a href="products.html">Products</a>
+      <a href="#company">Company</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="wrap hero__in">
+      <p class="hero__eyebrow fade" style="--i:0">YenSense Inc. — Tokyo</p>
+      <h1 class="hero__copy">
+        <span class="line" style="--i:0"><span>本質を見極め、感じ、</span></span>
+        <span class="line" style="--i:1"><span>選び取る力が、縁を結び、</span></span>
+        <span class="line" style="--i:2"><span>やがて、円を描く。</span></span>
+      </h1>
+      <p class="hero__sub fade" lang="en" style="--i:1">The sense to choose, the ties we make, the circle we draw.</p>
+    </div>
+    <div class="hero__scroll fade" style="--i:2" aria-hidden="true"><b>Scroll</b><i></i></div>
+    <div class="hero__giant" aria-hidden="true"><span>YENSENSE</span></div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="sec__grid">
+        <span class="sec__label" data-reveal>(01)&nbsp;&nbsp;Philosophy</span>
+        <div>
+          <h2 class="sec__title" data-reveal>派手さより、<br>続くことを。</h2>
+          <p class="sec__en" data-reveal lang="en" style="--i:1">Built to last, not to impress.</p>
+          <div class="sec__body phi__body">
+            <p data-reveal style="--i:2">YenSenseは、毎日使えるサービスを、企画から開発、運営まで少人数で行っています。</p>
+            <p data-reveal style="--i:3">大きな仕組みで一度に変えるのではなく、小さな世界を毎日少しずつ変えていく。まず自分たちが毎日使い、手放したくならなかったものだけを世に出す。使ってくださる方が来年も、その先も、私たちのサービスを使い続けてくれる。それを何より大切にしています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--ruled" id="origin">
+    <div class="wrap">
+      <div class="sec__grid">
+        <span class="sec__label" data-reveal>(02)&nbsp;&nbsp;Origin</span>
+        <div>
+          <h2 class="sec__title" data-reveal>縁はやがて、円になる。</h2>
+          <p class="sec__en" data-reveal lang="en" style="--i:1">En becomes yen. Value comes around.</p>
+          <div class="sec__body origin__body">
+            <p data-reveal>AIがあらゆる答えを生み出し、SNSが絶えず価値観を更新し続ける時代。便利になる一方で、私たちは「何を選ぶべきか」を自分で考えるよりも、「誰かが選んだもの」を追いかけることが増えています。</p>
+            <p data-reveal>だからこそ、これから最も価値を持つのは、情報の量ではなく、自分自身の「Sense」──本質を見極め、感じ、選び取る力だと、私たちは考えます。</p>
+            <h3 class="sec__title origin__sub" data-reveal>円と、縁。</h3>
+            <p class="sec__en origin__sub-en" data-reveal lang="en">Yen, and en.</p>
+            <p data-reveal>「Yen」には、「円」と「縁」の意味を込めました。人は、自分のSenseを通じて選び、行動することで、誰かとの縁を生み出します。その縁がつながり、互いの選択や価値を認め合うことで、点在していた想いは一つの「円」になります。</p>
+            <p data-reveal>「縁」が生まれ、「円」となって広がっていく。その始まりにあるのが、一人ひとりのSenseです。</p>
+            <p data-reveal>自分らしい感覚で選ぶことは、単なる個人の意思決定にとどまりません。それは人との縁を生み、その縁を新たな価値の循環へと変えていく力になります。</p>
+            <h3 class="sec__title origin__sub" data-reveal>どんな円を描くか。</h3>
+            <p class="sec__en origin__sub-en" data-reveal lang="en">What circle to draw.</p>
+            <p data-reveal>私たちは、誰もが自分のSenseを信じて選び、その選択が人との縁を結び、やがて社会に大きな円を描いていく世界を目指します。</p>
+            <p data-reveal>AIが答えを示す時代だからこそ、人間に必要なのは、答えを増やすことではなく、何を感じ、何を信じ、誰とつながり、どんな円を描くかを選ぶ「Sense」。それが、YenSenseという名前に込めた想いです。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="sec sec--ruled" id="company">
+    <div class="wrap">
+      <div class="sec__grid">
+        <span class="sec__label" data-reveal>(03)&nbsp;&nbsp;Company</span>
+        <div>
+          <h2 class="sec__title" data-reveal>会社概要</h2>
+          <div class="sec__body">
+            <dl class="company" data-reveal style="--i:1">
+              <div class="row"><dt>商号 <small>Name</small></dt><dd>YenSense株式会社</dd></div>
+              <div class="row"><dt>代表者 <small>CEO</small></dt><dd>鈴木 優</dd></div>
+              <div class="row"><dt>所在地 <small>Location</small></dt><dd>東京都世田谷区</dd></div>
+              <div class="row"><dt>資本金 <small>Capital</small></dt><dd>100万円</dd></div>
+              <div class="row"><dt>事業内容 <small>Business</small></dt><dd>
+                <ul>
+                  <li>コンピュータソフトウェアの企画・開発・販売・保守</li>
+                  <li>インターネットを利用した各種情報提供サービス</li>
+                </ul>
+              </dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <p>© 2026 YenSense株式会社</p>
+    <div class="ftr__links">
+      <a class="en" href="products.html">Products</a>
+      <a class="en" href="#company">Company</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  requestAnimationFrame(function(){ document.body.classList.add('is-ready'); });
+  var targets = document.querySelectorAll('[data-reveal]');
+  if (reduce || !('IntersectionObserver' in window)) {
+    targets.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.1, rootMargin:'0px 0px -6% 0px'});
+    targets.forEach(function(el){ io.observe(el); });
+  }
+})();
+</script>
+</body>
+</html>
