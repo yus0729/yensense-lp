@@ -206,22 +206,6 @@ section{scroll-margin-top:96px}
   margin:18px 0 clamp(40px,6vw,72px);
 }
 
-/* ================= company ================= */
-.company{margin:0;border-top:1px solid var(--line);max-width:680px}
-.row{
-  display:grid;grid-template-columns:160px 1fr;gap:20px;
-  padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline;
-}
-@media(max-width:640px){ .row{grid-template-columns:1fr;gap:2px;padding:17px 0} }
-.row dt{
-  margin:0;font-size:12px;letter-spacing:.1em;color:var(--ink-mute);
-  display:flex;align-items:baseline;gap:12px;
-}
-.row dt small{font-family:var(--font-en);font-weight:400;font-size:9px;letter-spacing:.18em;text-transform:uppercase}
-.row dd{margin:0;font-size:13px;letter-spacing:.04em;font-variant-numeric:tabular-nums}
-.row dd ul{margin:0;padding-left:1.2em}
-.row dd li{margin:3px 0}
-
 /* ================= footer ================= */
 .ftr .wrap{
   border-top:1px solid var(--line);
@@ -254,7 +238,7 @@ section{scroll-margin-top:96px}
     <a class="brand" href="#top">YenSense</a>
     <nav class="nav" aria-label="メインナビゲーション">
       <a href="products.html">Products</a>
-      <a href="#company">Company</a>
+      <a href="company.html">Company</a>
     </nav>
   </div>
 </header>
@@ -277,7 +261,7 @@ section{scroll-margin-top:96px}
   <section class="sec" id="about">
     <div class="wrap">
       <div class="sec__grid">
-        <span class="sec__label" data-reveal>(01)&nbsp;&nbsp;Philosophy</span>
+        <span class="sec__label" data-reveal>Philosophy</span>
         <div>
           <h2 class="sec__title" data-reveal>まず、自分たちが使う。</h2>
           <p class="sec__en" data-reveal lang="en" style="--i:1">We use it first.</p>
@@ -293,7 +277,7 @@ section{scroll-margin-top:96px}
   <section class="sec sec--ruled" id="origin">
     <div class="wrap">
       <div class="sec__grid">
-        <span class="sec__label" data-reveal>(02)&nbsp;&nbsp;Origin</span>
+        <span class="sec__label" data-reveal>Origin</span>
         <div>
           <h2 class="sec__title" data-reveal>縁はやがて、円になる。</h2>
           <p class="sec__en" data-reveal lang="en" style="--i:1">En becomes yen. Value comes around.</p>
@@ -314,34 +298,6 @@ section{scroll-margin-top:96px}
       </div>
     </div>
   </section>
-
-
-  <section class="sec sec--ruled" id="company">
-    <div class="wrap">
-      <div class="sec__grid">
-        <span class="sec__label" data-reveal>(03)&nbsp;&nbsp;Company</span>
-        <div>
-          <h2 class="sec__title" data-reveal>会社概要</h2>
-          <div class="sec__body">
-            <dl class="company" data-reveal style="--i:1">
-              <div class="row"><dt>商号 <small>Name</small></dt><dd>YenSense株式会社</dd></div>
-              <div class="row"><dt>代表者 <small>CEO</small></dt><dd>鈴木 優</dd></div>
-              <div class="row"><dt>所在地 <small>Location</small></dt><dd>東京都世田谷区</dd></div>
-              <div class="row"><dt>資本金 <small>Capital</small></dt><dd>100万円</dd></div>
-              <div class="row"><dt>事業内容 <small>Business</small></dt><dd>
-                <ul>
-                  <li>コンピュータソフトウェアの企画・開発・販売・保守</li>
-                  <li>インターネットを利用した各種情報提供サービス</li>
-                </ul>
-              </dd></div>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
 </main>
 
 <footer class="ftr">
@@ -349,7 +305,7 @@ section{scroll-margin-top:96px}
     <p>© 2026 YenSense株式会社</p>
     <div class="ftr__links">
       <a class="en" href="products.html">Products</a>
-      <a class="en" href="#company">Company</a>
+      <a class="en" href="company.html">Company</a>
       <a href="privacy.html">プライバシーポリシー</a>
     </div>
   </div>
