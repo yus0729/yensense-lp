@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YenSense Inc. — Built to last, not to impress.</title>
-<meta name="description" content="YenSense Inc. is a software company based in Setagaya, Tokyo. We plan, build, and operate products designed to make everyday life a little better.">
+<title>YenSense株式会社 — 派手さより、続くことを。</title>
+<meta name="description" content="YenSense株式会社は、東京・世田谷を拠点に、毎日使えるソフトウェアを企画・開発・運営する会社です。">
 <meta name="theme-color" content="#ffffff">
 <meta name="robots" content="index,follow">
-<link rel="canonical" href="https://yensense.com/">
+<link rel="canonical" href="https://yensense.com/ja/">
 <link rel="alternate" hreflang="en" href="https://yensense.com/">
 <link rel="alternate" hreflang="ja" href="https://yensense.com/ja/">
 <link rel="alternate" hreflang="x-default" href="https://yensense.com/">
 
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="YenSense Inc.">
-<meta property="og:url" content="https://yensense.com/">
-<meta property="og:title" content="YenSense Inc. — Built to last, not to impress.">
-<meta property="og:description" content="A software company in Setagaya, Tokyo, building products designed to make everyday life a little better.">
-<meta property="og:locale" content="en_US">
-<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:site_name" content="YenSense株式会社">
+<meta property="og:url" content="https://yensense.com/ja/">
+<meta property="og:title" content="YenSense株式会社 — 派手さより、続くことを。">
+<meta property="og:description" content="東京・世田谷のソフトウェア会社。毎日使えるものを、自分たちの手で企画・開発・運営しています。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1913'/%3E%3Ctext x='32' y='44' font-family='Helvetica,Arial,sans-serif' font-weight='700' font-size='34' fill='%23ffffff' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
@@ -32,13 +32,12 @@
 {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "YenSense Inc.",
-  "alternateName": "YenSense株式会社",
+  "name": "YenSense株式会社",
   "url": "https://yensense.com/",
   "address": {
     "@type": "PostalAddress",
-    "addressRegion": "Tokyo",
-    "addressLocality": "Setagaya",
+    "addressRegion": "東京都",
+    "addressLocality": "世田谷区",
     "addressCountry": "JP"
   },
   "founder": { "@type": "Person", "name": "鈴木 陽" }
@@ -66,10 +65,10 @@ body{
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font-family:var(--font-en);
+  font-family:var(--font-sans);
   font-size:14px;
-  line-height:1.9;
-  letter-spacing:.015em;
+  line-height:2.2;
+  letter-spacing:.05em;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
@@ -114,37 +113,46 @@ section{scroll-margin-top:96px}
 }
 .hero__in{flex:1;display:flex;flex-direction:column;justify-content:center}
 .hero__eyebrow{
-  font-size:10px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;
-  color:var(--ink-mute);margin-bottom:40px;
+  font-family:var(--font-en);font-size:10px;font-weight:500;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--ink-mute);
+  margin-bottom:40px;
 }
 .hero__copy{
-  font-family:var(--font-en);font-weight:400;
-  font-size:clamp(36px,5.2vw,72px);
-  line-height:1.2;letter-spacing:-.035em;
+  font-family:var(--font-min);font-weight:400;
+  font-size:clamp(26px,3.6vw,46px);
+  line-height:2.0;letter-spacing:.14em;
+  font-feature-settings:"palt";
 }
 .hero__sub{
-  margin-top:38px;font-weight:500;font-size:10px;
+  margin-top:38px;
+  font-family:var(--font-en);font-weight:500;font-size:10px;
   letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);
 }
 .hero__giant{position:relative;z-index:1;margin-top:auto;padding-top:6vh}
 .hero__giant span{
-  display:block;font-weight:500;font-size:clamp(52px,17vw,320px);
+  display:block;
+  font-family:var(--font-en);font-weight:500;
+  font-size:clamp(52px,17vw,320px);
   line-height:.82;letter-spacing:-.015em;white-space:nowrap;
-  transform:translateY(112%);margin-bottom:-.06em;
+  transform:translateY(112%);
+  margin-bottom:-.06em;
 }
 .is-ready .hero__giant span{animation:riseIn 1.8s var(--ease) .7s forwards}
 .hero__giant::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--paper)}
+
 .hero__scroll{
   position:absolute;bottom:32vh;right:clamp(24px,3.6vw,48px);z-index:2;
   display:flex;flex-direction:column;align-items:center;gap:12px;
 }
 .hero__scroll b{
-  font-weight:500;font-size:9px;letter-spacing:.3em;text-transform:uppercase;
-  color:var(--ink-mute);writing-mode:vertical-rl;
+  font-family:var(--font-en);font-weight:500;font-size:9px;
+  letter-spacing:.3em;text-transform:uppercase;color:var(--ink-mute);
+  writing-mode:vertical-rl;
 }
 .hero__scroll i{width:1px;height:64px;background:var(--ink-mute);opacity:.5}
-@media(max-width:900px){.hero__scroll{display:none}}
+@media(max-width:900px){ .hero__scroll{display:none} }
 
+/* イントロ（行マスク） */
 .line{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.08em}
 .line > span{display:block;transform:translateY(114%)}
 .is-ready .line > span{
@@ -162,36 +170,47 @@ section{scroll-margin-top:96px}
 /* ================= sections ================= */
 .sec .wrap{padding-block:clamp(120px,16vw,220px)}
 .sec--ruled .wrap{border-top:1px solid var(--line)}
+
 .sec__grid{display:grid;gap:clamp(48px,7vw,72px)}
 @media(min-width:900px){
   .sec__grid{grid-template-columns:220px minmax(0,1fr);gap:clamp(40px,6vw,96px)}
   .sec__label{position:sticky;top:120px;align-self:start}
 }
 .sec__label{
-  font-weight:400;font-size:10px;letter-spacing:.24em;
-  text-transform:uppercase;color:var(--ink-mute);
+  font-family:var(--font-en);font-weight:400;font-size:10px;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--ink-mute);
+  font-variant-numeric:tabular-nums;
 }
 .sec__title{
-  font-weight:400;font-size:clamp(28px,3.2vw,42px);
-  line-height:1.35;letter-spacing:-.025em;
+  font-family:var(--font-min);font-weight:400;
+  font-size:clamp(22px,2.8vw,34px);line-height:1.9;letter-spacing:.12em;
+  font-feature-settings:"palt";
 }
 .sec__en{
-  margin-top:18px;font-size:10px;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--ink-mute);
+  margin-top:18px;
+  font-family:var(--font-en);font-weight:400;font-size:10px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);
 }
 .sec__body{margin-top:clamp(40px,6vw,72px)}
 
+/* reveal */
 [data-reveal]{opacity:0;transform:translateY(16px);transition:opacity 1.4s var(--ease),transform 1.4s var(--ease)}
 [data-reveal].in{opacity:1;transform:none;transition-delay:calc(var(--i,0)*150ms)}
 
-.phi__body{max-width:43em;display:grid;gap:2.2em;color:var(--ink-soft)}
-.origin__body{max-width:43em}
-.origin__body p{color:var(--ink-soft);margin:0 0 2.2em}
+/* ================= philosophy ================= */
+.phi__body{max-width:36em;display:grid;gap:2.2em;color:var(--ink-soft)}
+
+/* ================= origin ================= */
+.origin__body{max-width:36em}
+.origin__body p{
+  color:var(--ink-soft);margin:0 0 2.2em;
+}
 .origin__body p:last-child{margin-bottom:0}
 .origin__sub{margin-top:clamp(56px,8vw,96px)}
 .origin__body p.origin__sub-en{
-  font-size:10px;line-height:2;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--ink-mute);margin:18px 0 clamp(40px,6vw,72px);
+  font-family:var(--font-en);font-weight:400;font-size:10px;
+  line-height:2;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);
+  margin:18px 0 clamp(40px,6vw,72px);
 }
 
 /* ================= footer ================= */
@@ -204,11 +223,13 @@ section{scroll-margin-top:96px}
 .ftr a{color:var(--ink-mute);text-decoration:none;transition:color .4s}
 .ftr a:hover{color:var(--ink)}
 .ftr__links{display:flex;gap:24px;flex-wrap:wrap}
-.ftr__links .en{font-weight:500;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+.ftr__links .en{font-family:var(--font-en);font-weight:500;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
 
+/* ================= a11y ================= */
 .skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:12px 20px;z-index:200}
 .skip:focus{left:0}
 :focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -217,31 +238,32 @@ section{scroll-margin-top:96px}
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="#main">本文へスキップ</a>
 
 <header class="hdr">
   <div class="wrap hdr__in">
     <a class="brand" href="#top">YenSense</a>
-    <nav class="nav" aria-label="Main navigation">
+    <nav class="nav" aria-label="メインナビゲーション">
       <a href="company.html">Company</a>
-      <span class="lang-switch" aria-label="Language selection">
-        <a href="/" lang="en" hreflang="en" aria-current="page">EN</a>
+      <span class="lang-switch" aria-label="言語選択">
+        <a href="/" lang="en" hreflang="en">EN</a>
         <span class="lang-switch__sep" aria-hidden="true">/</span>
-        <a href="/ja/" lang="ja" hreflang="ja">JP</a>
+        <a href="/ja/" lang="ja" hreflang="ja" aria-current="page">JP</a>
       </span>
     </nav>
   </div>
 </header>
 
 <main id="main">
+
   <section class="hero" id="top">
     <div class="wrap hero__in">
       <p class="hero__eyebrow fade" style="--i:0">YenSense Inc. — Tokyo</p>
       <h1 class="hero__copy">
-        <span class="line" style="--i:0"><span>Built to last,</span></span>
-        <span class="line" style="--i:1"><span>not to impress.</span></span>
+        <span class="line" style="--i:0"><span>派手さより、続くことを。</span></span>
+        <span class="line" style="--i:1"><span>毎日使えるものを。</span></span>
       </h1>
-      <p class="hero__sub fade" style="--i:1">Things worth using every day.</p>
+      <p class="hero__sub fade" lang="en" style="--i:1">Built to last, not to impress.</p>
     </div>
     <div class="hero__scroll fade" style="--i:2" aria-hidden="true"><b>Scroll</b><i></i></div>
     <div class="hero__giant" aria-hidden="true"><span>YENSENSE</span></div>
@@ -252,11 +274,11 @@ section{scroll-margin-top:96px}
       <div class="sec__grid">
         <span class="sec__label" data-reveal>Philosophy</span>
         <div>
-          <h2 class="sec__title" data-reveal>We use it first.</h2>
-          <p class="sec__en" data-reveal style="--i:1">Built by us, used by us.</p>
+          <h2 class="sec__title" data-reveal>まず、自分たちが使う。</h2>
+          <p class="sec__en" data-reveal lang="en" style="--i:1">We use it first.</p>
           <div class="sec__body phi__body">
-            <p data-reveal style="--i:2">We plan, build, and operate every product ourselves.</p>
-            <p data-reveal style="--i:3">We do not try to transform the world all at once through grand systems. We work on smaller worlds, improving them a little every day. We use what we build ourselves and release the things that make the world—even slightly—better. What matters most to us is that the people who choose our products will still want to use them next year and for many years after.</p>
+            <p data-reveal style="--i:2">企画から開発、運営まで、自分たちの手で行っています。</p>
+            <p data-reveal style="--i:3">大きな仕組みで一度に変えるのではなく、小さな世界を毎日少しずつ変えていく。まず自分たちが毎日使い、ちょっとでも世界が良くなったものを世に出す。使ってくださる方が来年も、その先も、私たちのサービスを使い続けてくれる。それを何より大切にしています。</p>
           </div>
         </div>
       </div>
@@ -268,20 +290,20 @@ section{scroll-margin-top:96px}
       <div class="sec__grid">
         <span class="sec__label" data-reveal>Origin</span>
         <div>
-          <h2 class="sec__title" data-reveal>Connections become circles.</h2>
-          <p class="sec__en" data-reveal style="--i:1">En becomes yen. Value comes around.</p>
+          <h2 class="sec__title" data-reveal>縁はやがて、円になる。</h2>
+          <p class="sec__en" data-reveal lang="en" style="--i:1">En becomes yen. Value comes around.</p>
           <div class="sec__body origin__body">
-            <p data-reveal>We live in an age when AI can generate answers to almost anything and social media constantly reshapes what people value. Life is more convenient, yet we increasingly follow choices made by others instead of deciding for ourselves what is worth choosing.</p>
-            <p data-reveal>That is why we believe the greatest value ahead lies not in the amount of information we have, but in our own “Sense”—the ability to recognize what matters, to feel, and to choose.</p>
-            <h3 class="sec__title origin__sub" data-reveal>Yen and en.</h3>
-            <p class="sec__en origin__sub-en" data-reveal>The meaning behind our name.</p>
-            <p data-reveal>The “Yen” in our name carries two Japanese ideas: 円, a circle and the yen, and 縁, a connection between people. When we choose and act through our own Sense, we create connections with others. As those connections grow and we recognize the value in one another’s choices, scattered intentions come together to form a circle.</p>
-            <p data-reveal>A connection forms and grows into a circle. It all begins with each person’s Sense.</p>
-            <p data-reveal>Choosing through your own sensibility is more than an individual decision. It creates connections with others and turns those connections into a new cycle of value.</p>
-            <h3 class="sec__title origin__sub" data-reveal>The circle we choose to draw.</h3>
-            <p class="sec__en origin__sub-en" data-reveal>What circle to draw.</p>
-            <p data-reveal>We want to build a world where everyone can trust their own Sense, where each choice creates a connection, and where those connections eventually draw a larger circle through society.</p>
-            <p data-reveal>In an age when AI can provide the answers, what people need is not more answers. We need the Sense to choose what to feel, what to believe, who to connect with, and what kind of circle to draw. That is the idea at the heart of YenSense.</p>
+            <p data-reveal>AIがあらゆる答えを生み出し、SNSが絶えず価値観を更新し続ける時代。便利になる一方で、私たちは「何を選ぶべきか」を自分で考えるよりも、「誰かが選んだもの」を追いかけることが増えています。</p>
+            <p data-reveal>だからこそ、これから最も価値を持つのは、情報の量ではなく、自分自身の「Sense」──本質を見極め、感じ、選び取る力だと、私たちは考えます。</p>
+            <h3 class="sec__title origin__sub" data-reveal>円と、縁。</h3>
+            <p class="sec__en origin__sub-en" data-reveal lang="en">Yen, and en.</p>
+            <p data-reveal>「Yen」には、「円」と「縁」の意味を込めました。人は、自分のSenseを通じて選び、行動することで、誰かとの縁を生み出します。その縁がつながり、互いの選択や価値を認め合うことで、点在していた想いは一つの「円」になります。</p>
+            <p data-reveal>「縁」が生まれ、「円」となって広がっていく。その始まりにあるのが、一人ひとりのSenseです。</p>
+            <p data-reveal>自分らしい感覚で選ぶことは、単なる個人の意思決定にとどまりません。それは人との縁を生み、その縁を新たな価値の循環へと変えていく力になります。</p>
+            <h3 class="sec__title origin__sub" data-reveal>どんな円を描くか。</h3>
+            <p class="sec__en origin__sub-en" data-reveal lang="en">What circle to draw.</p>
+            <p data-reveal>私たちは、誰もが自分のSenseを信じて選び、その選択が人との縁を結び、やがて社会に大きな円を描いていく世界を目指します。</p>
+            <p data-reveal>AIが答えを示す時代だからこそ、人間に必要なのは、答えを増やすことではなく、何を感じ、何を信じ、誰とつながり、どんな円を描くかを選ぶ「Sense」。それが、YenSenseという名前に込めた想いです。</p>
           </div>
         </div>
       </div>
@@ -291,10 +313,10 @@ section{scroll-margin-top:96px}
 
 <footer class="ftr">
   <div class="wrap">
-    <p>© 2026 YenSense Inc.</p>
+    <p>© 2026 YenSense株式会社</p>
     <div class="ftr__links">
       <a class="en" href="company.html">Company</a>
-      <a class="en" href="privacy.html">Privacy Policy</a>
+      <a href="privacy.html">プライバシーポリシー</a>
     </div>
   </div>
 </footer>
