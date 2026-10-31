@@ -35,12 +35,8 @@ body{
 .hdr{border-bottom:1px solid var(--line-soft)}
 .hdr__in{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand{font-family:var(--font-en);font-weight:500;font-size:15px;letter-spacing:-.01em;text-decoration:none;color:var(--ink);display:inline-flex;align-items:baseline;gap:8px}
-.lang-switch{display:flex;align-items:center;gap:8px;font-family:var(--font-en);font-size:10px;font-weight:500;letter-spacing:.18em}
-.lang-switch a{text-decoration:none}
-.lang-switch a[aria-current="page"]{opacity:.45;pointer-events:none}
-.lang-switch__sep{font-size:9px;color:var(--line)}
+.lang-switch a{font-family:var(--font-en);font-size:13px;letter-spacing:0;text-decoration:none;color:var(--ink)}
 main.wrap{padding:72px 24px 96px}
-.label{font-family:var(--font-en);font-weight:400;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-mute);display:block;margin-bottom:24px}
 
 h1{font-family:var(--font-min);font-weight:400;font-size:clamp(25px,4vw,34px);letter-spacing:.05em;line-height:1.6;margin:0 0 10px}
 .updated{color:var(--ink-mute);font-size:12.5px;margin:0 0 52px;letter-spacing:.05em}
@@ -50,7 +46,7 @@ p{margin:0 0 14px;color:var(--ink-mid)}
 ul{margin:0 0 14px;padding-left:1.3em;color:var(--ink-mid)}
 li{margin:5px 0}
 a{color:var(--ink);text-decoration-color:var(--ink-mute);text-underline-offset:3px}
-.back{display:inline-flex;align-items:center;gap:8px;margin-top:56px;font-family:var(--font-en);font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}
+.back{display:inline-block;margin-top:56px;font-size:14px;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px}
 .ftr{border-top:1px solid var(--line);padding:36px 0 48px;font-size:12px;color:var(--ink-mute);letter-spacing:.05em}
 :focus-visible{outline:2px solid var(--ink);outline-offset:3px}
 </style>
@@ -59,14 +55,11 @@ a{color:var(--ink);text-decoration-color:var(--ink-mute);text-underline-offset:3
 <header class="hdr"><div class="wrap hdr__in">
   <a class="brand" href="index.html">YenSense</a>
   <nav class="lang-switch" aria-label="言語選択">
-    <a href="/privacy.html" lang="en" hreflang="en">EN</a>
-    <span class="lang-switch__sep" aria-hidden="true">/</span>
-    <a href="/ja/privacy.html" lang="ja" hreflang="ja" aria-current="page">JP</a>
+    <a href="/privacy.html" lang="en" hreflang="en">English</a>
   </nav>
 </div></header>
 
 <main class="wrap">
-  <span class="label">(Privacy Policy)</span>
   <h1>プライバシーポリシー</h1>
   <p class="updated">最終更新日：2026年9月1日</p>
 
@@ -113,7 +106,7 @@ a{color:var(--ink);text-decoration-color:var(--ink-mute);text-underline-offset:3
     <a href="https://forms.gle/AgnfX5c9n2kb95xc6" target="_blank" rel="noopener">お問い合わせフォーム</a>
   </p>
 
-  <a class="back" href="index.html">← Back to Top</a>
+  <a class="back" href="index.html">← トップへ戻る</a>
 </main>
 
 <footer class="ftr"><div class="wrap">© 2026 YenSense株式会社</div></footer>

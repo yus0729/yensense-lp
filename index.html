@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YenSense, Inc. — Built to last, not to impress.</title>
+<title>YenSense, Inc. | Built to last, not to impress.</title>
 <meta name="description" content="YenSense, Inc. is a software company based in Tokyo. We plan, build, and operate products designed to make everyday life a little better.">
 <meta name="theme-color" content="#ffffff">
 <meta name="robots" content="index,follow">
@@ -15,7 +15,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="YenSense, Inc.">
 <meta property="og:url" content="https://yensense.com/">
-<meta property="og:title" content="YenSense, Inc. — Built to last, not to impress.">
+<meta property="og:title" content="YenSense, Inc. | Built to last, not to impress.">
 <meta property="og:description" content="A software company in Tokyo, building products designed to make everyday life a little better.">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ja_JP">
@@ -90,19 +90,12 @@ section{scroll-margin-top:96px}
 }
 .nav{display:flex;align-items:center;gap:clamp(20px,3vw,40px)}
 .nav a{
-  font-family:var(--font-en);font-size:10px;font-weight:500;
-  letter-spacing:.2em;text-transform:uppercase;
+  font-size:13px;
   text-decoration:none;color:var(--ink);
   transition:opacity .5s var(--ease);
 }
+.nav a[lang="ja"]{font-family:var(--font-sans);letter-spacing:.04em}
 .nav a:hover{opacity:.45}
-.lang-switch{display:flex;align-items:center;gap:8px}
-.lang-switch a[aria-current="page"]{opacity:.45;pointer-events:none}
-.lang-switch__sep{font-family:var(--font-en);font-size:9px;color:var(--line)}
-@media(max-width:420px){
-  .nav{gap:14px}
-  .nav a{letter-spacing:.14em}
-}
 
 /* ================= hero ================= */
 .hero{
@@ -114,18 +107,14 @@ section{scroll-margin-top:96px}
   overflow:hidden;
 }
 .hero__in{flex:1;display:flex;flex-direction:column;justify-content:center}
-.hero__eyebrow{
-  font-size:10px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;
-  color:var(--ink-mute);margin-bottom:40px;
-}
 .hero__copy{
   font-family:var(--font-en);font-weight:400;
   font-size:clamp(36px,5.2vw,72px);
   line-height:1.2;letter-spacing:-.035em;
 }
 .hero__sub{
-  margin-top:38px;font-weight:500;font-size:10px;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);
+  margin-top:32px;font-size:clamp(16px,1.5vw,19px);
+  letter-spacing:-.005em;color:var(--ink-soft);
 }
 .hero__giant{position:relative;z-index:1;margin-top:auto;padding-top:6vh}
 .hero__giant span{
@@ -135,17 +124,6 @@ section{scroll-margin-top:96px}
 }
 .is-ready .hero__giant span{animation:riseIn 1.8s var(--ease) .7s forwards}
 .hero__giant::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--paper)}
-.hero__scroll{
-  position:absolute;bottom:32vh;right:clamp(24px,3.6vw,48px);z-index:2;
-  display:flex;flex-direction:column;align-items:center;gap:12px;
-}
-.hero__scroll b{
-  font-weight:500;font-size:9px;letter-spacing:.3em;text-transform:uppercase;
-  color:var(--ink-mute);writing-mode:vertical-rl;
-}
-.hero__scroll i{width:1px;height:64px;background:var(--ink-mute);opacity:.5}
-@media(max-width:900px){.hero__scroll{display:none}}
-
 .line{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.08em}
 .line > span{display:block;transform:translateY(114%)}
 .is-ready .line > span{
@@ -168,17 +146,10 @@ section{scroll-margin-top:96px}
   .sec__grid{grid-template-columns:220px minmax(0,1fr);gap:clamp(40px,6vw,96px)}
   .sec__label{position:sticky;top:120px;align-self:start}
 }
-.sec__label{
-  font-weight:400;font-size:10px;letter-spacing:.24em;
-  text-transform:uppercase;color:var(--ink-mute);
-}
+.sec__label{font-size:13px;color:var(--ink-mute)}
 .sec__title{
   font-weight:400;font-size:clamp(28px,3.2vw,42px);
   line-height:1.35;letter-spacing:-.025em;
-}
-.sec__en{
-  margin-top:18px;font-size:10px;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--ink-mute);
 }
 .sec__body{margin-top:clamp(40px,6vw,72px)}
 
@@ -189,11 +160,7 @@ section{scroll-margin-top:96px}
 .origin__body{max-width:43em}
 .origin__body p{color:var(--ink-soft);margin:0 0 2.2em}
 .origin__body p:last-child{margin-bottom:0}
-.origin__sub{margin-top:clamp(56px,8vw,96px)}
-.origin__body p.origin__sub-en{
-  font-size:10px;line-height:2;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--ink-mute);margin:18px 0 clamp(40px,6vw,72px);
-}
+.origin__sub{margin:clamp(56px,8vw,96px) 0 clamp(28px,4vw,40px)}
 
 /* ================= footer ================= */
 .ftr .wrap{
@@ -205,7 +172,6 @@ section{scroll-margin-top:96px}
 .ftr a{color:var(--ink-mute);text-decoration:none;transition:color .4s}
 .ftr a:hover{color:var(--ink)}
 .ftr__links{display:flex;gap:24px;flex-wrap:wrap}
-.ftr__links .en{font-weight:500;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
 
 .skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:12px 20px;z-index:200}
 .skip:focus{left:0}
@@ -225,11 +191,7 @@ section{scroll-margin-top:96px}
     <a class="brand" href="#top">YenSense</a>
     <nav class="nav" aria-label="Main navigation">
       <a href="company.html">Company</a>
-      <span class="lang-switch" aria-label="Language selection">
-        <a href="/" lang="en" hreflang="en" aria-current="page">EN</a>
-        <span class="lang-switch__sep" aria-hidden="true">/</span>
-        <a href="/ja/" lang="ja" hreflang="ja">JP</a>
-      </span>
+      <a href="/ja/" lang="ja" hreflang="ja">日本語</a>
     </nav>
   </div>
 </header>
@@ -237,24 +199,21 @@ section{scroll-margin-top:96px}
 <main id="main">
   <section class="hero" id="top">
     <div class="wrap hero__in">
-      <p class="hero__eyebrow fade" style="--i:0">YenSense, Inc. — Tokyo</p>
       <h1 class="hero__copy">
         <span class="line" style="--i:0"><span>Built to last,</span></span>
         <span class="line" style="--i:1"><span>not to impress.</span></span>
       </h1>
       <p class="hero__sub fade" style="--i:1">Things worth using every day.</p>
     </div>
-    <div class="hero__scroll fade" style="--i:2" aria-hidden="true"><b>Scroll</b><i></i></div>
     <div class="hero__giant" aria-hidden="true"><span>YENSENSE</span></div>
   </section>
 
   <section class="sec" id="about">
     <div class="wrap">
       <div class="sec__grid">
-        <span class="sec__label" data-reveal>Philosophy</span>
+        <span class="sec__label" data-reveal>Approach</span>
         <div>
           <h2 class="sec__title" data-reveal>We use it first.</h2>
-          <p class="sec__en" data-reveal style="--i:1">Built by us, used by us.</p>
           <div class="sec__body phi__body">
             <p data-reveal style="--i:2">We plan, build, and operate every product ourselves.</p>
             <p data-reveal style="--i:3">We do not try to transform the world all at once through grand systems. We work on smaller worlds, improving them a little every day. We use what we build ourselves and release the things that make the world—even slightly—better. What matters most to us is that the people who choose our products will still want to use them next year and for many years after.</p>
@@ -267,15 +226,13 @@ section{scroll-margin-top:96px}
   <section class="sec sec--ruled" id="origin">
     <div class="wrap">
       <div class="sec__grid">
-        <span class="sec__label" data-reveal>Origin</span>
+        <span class="sec__label" data-reveal>Our name</span>
         <div>
           <h2 class="sec__title" data-reveal>Trust your Sense.</h2>
-          <p class="sec__en" data-reveal style="--i:1">From Sense, connections. From connections, a circle.</p>
           <div class="sec__body origin__body">
             <p data-reveal>We live in an age when AI can generate answers to almost anything and social media constantly reshapes what people value. Life is more convenient, yet we increasingly follow choices made by others instead of deciding for ourselves what is worth choosing.</p>
             <p data-reveal>That is why we believe the greatest value ahead lies not in the amount of information we have, but in our own “Sense”—the ability to recognize what matters, to feel, and to choose.</p>
             <h3 class="sec__title origin__sub" data-reveal>Yen and en.</h3>
-            <p class="sec__en origin__sub-en" data-reveal>The meaning behind our name.</p>
             <p data-reveal>The “Yen” in our name carries two Japanese ideas: 円, a circle and the yen, and 縁, a connection between people. When we choose and act through our own Sense, we create connections with others. As those connections grow and we recognize the value in one another’s choices, scattered intentions come together to form a circle.</p>
             <p data-reveal>A connection forms and grows into a circle. It all begins with each person’s Sense.</p>
             <p data-reveal>In an age when AI can provide the answers, what people need is not more answers. We need the Sense to choose what to feel, what to believe, who to connect with, and what kind of circle to draw. We want to build a world where everyone can trust their own Sense, where each choice creates a connection, and where those connections eventually draw a larger circle through society.</p>
@@ -290,8 +247,8 @@ section{scroll-margin-top:96px}
   <div class="wrap">
     <p>© 2026 YenSense, Inc.</p>
     <div class="ftr__links">
-      <a class="en" href="company.html">Company</a>
-      <a class="en" href="privacy.html">Privacy Policy</a>
+      <a href="company.html">Company</a>
+      <a href="privacy.html">Privacy Policy</a>
     </div>
   </div>
 </footer>

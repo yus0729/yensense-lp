@@ -73,14 +73,10 @@ h1{margin:0;font-weight:400}
 .brand{font-weight:500;font-size:15px;letter-spacing:-.01em;text-decoration:none}
 .nav{display:flex;align-items:center;gap:clamp(20px,3vw,40px)}
 .nav a{
-  font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;
-  text-decoration:none;color:var(--ink);transition:opacity .5s var(--ease);
+  font-size:13px;text-decoration:none;color:var(--ink);transition:opacity .5s var(--ease);
 }
+.nav a[lang="ja"]{font-family:var(--font-sans);letter-spacing:.04em}
 .nav a:hover{opacity:.45}
-.lang-switch{display:flex;align-items:center;gap:8px}
-.lang-switch a[aria-current="page"]{opacity:.45;pointer-events:none}
-.lang-switch__sep{font-size:9px;color:var(--line)}
-@media(max-width:420px){.nav{gap:14px}.nav a{letter-spacing:.14em}}
 
 /* company */
 .sec .wrap{padding-block:clamp(88px,10vw,140px) clamp(120px,14vw,200px)}
@@ -89,19 +85,15 @@ h1{margin:0;font-weight:400}
   .sec__grid{grid-template-columns:220px minmax(0,1fr);gap:clamp(40px,6vw,96px)}
   .sec__label{position:sticky;top:48px;align-self:start}
 }
-.sec__label{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-mute)}
+.sec__label{font-size:13px;color:var(--ink-mute)}
 .sec__title{font-size:clamp(28px,3.2vw,42px);line-height:1.35;letter-spacing:-.025em}
-.sec__en{
-  margin:18px 0 0;font-size:10px;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--ink-mute);
-}
 .sec__body{margin-top:clamp(40px,6vw,72px)}
 .company{margin:0;border-top:1px solid var(--line);max-width:760px}
 .row{
   display:grid;grid-template-columns:180px 1fr;gap:20px;
   padding:20px 0;border-bottom:1px solid var(--line);align-items:baseline;
 }
-.row dt{margin:0;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-mute)}
+.row dt{margin:0;font-size:13px;color:var(--ink-mute)}
 .row dd{margin:0;font-size:14px;letter-spacing:.01em;font-variant-numeric:tabular-nums}
 .row dd ul{margin:0;padding-left:1.2em}
 .row dd li{margin:5px 0}
@@ -119,7 +111,6 @@ h1{margin:0;font-weight:400}
 .ftr a{color:var(--ink-mute);text-decoration:none;transition:color .4s}
 .ftr a:hover{color:var(--ink)}
 .ftr__links{display:flex;gap:24px;flex-wrap:wrap}
-.ftr__links .en{font-weight:500;font-size:10px;letter-spacing:.18em;text-transform:uppercase}
 
 .skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--paper);padding:12px 20px;z-index:200}
 .skip:focus{left:0}
@@ -137,11 +128,7 @@ h1{margin:0;font-weight:400}
   <div class="wrap hdr__in">
     <a class="brand" href="index.html">YenSense</a>
     <nav class="nav" aria-label="Language selection">
-      <span class="lang-switch">
-        <a href="/company.html" lang="en" hreflang="en" aria-current="page">EN</a>
-        <span class="lang-switch__sep" aria-hidden="true">/</span>
-        <a href="/ja/company.html" lang="ja" hreflang="ja">JP</a>
-      </span>
+      <a href="/ja/company.html" lang="ja" hreflang="ja">日本語</a>
     </nav>
   </div>
 </header>
@@ -153,7 +140,6 @@ h1{margin:0;font-weight:400}
         <span class="sec__label" data-reveal>Company</span>
         <div>
           <h1 class="sec__title" data-reveal>Company Profile</h1>
-          <p class="sec__en" data-reveal style="--i:1">About YenSense</p>
           <div class="sec__body">
             <dl class="company" data-reveal style="--i:1">
               <div class="row"><dt>Name</dt><dd>YenSense, Inc. / YenSense株式会社</dd></div>
@@ -178,7 +164,7 @@ h1{margin:0;font-weight:400}
   <div class="wrap">
     <p>© 2026 YenSense, Inc.</p>
     <div class="ftr__links">
-      <a class="en" href="privacy.html">Privacy Policy</a>
+      <a href="privacy.html">Privacy Policy</a>
     </div>
   </div>
 </footer>
